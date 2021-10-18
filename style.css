@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+body {
+  width: 100vh;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(243, 243, 243);
+}
+
+.instagram-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 40%;
+  height: 100vh;
+}
+
+.instagram-telefone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  margin-left: 16rem;
+}
+
+.instagram-telefone img {
+  width: 30rem;
+}
+
+.instagram-continuar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  min-height: 30rem;
+  margin-left: 15rem;
+  margin-top: 3rem;
+  border-radius: 1px;
+}
+
+.grupo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 100%;
+  padding: 1rem 4rem;
+  border: 1px solid lightgray;
+}
+
+.instagram-logo {
+  width: 12.5rem;
+  position: relative;
+}
+
+.conteiner-perfil {
+  margin-top: 0.5rem;
+}
+
+.foto-perfil {
+  border-radius: 50%;
+  width: 7rem;
+  height: 7rem;
+  overflow: hidden;
+}
+
+.instagram-login {
+  margin-top: 1.5rem;
+  display: flex;
+  padding-top: 0.5rem;
+  justify-content: center;
+  background-color: #0095f6;
+  width: 17rem;
+  height: 2.3rem;
+  border-radius: 4px;
+}
+
+.botao-login {
+  color: white;
+  font-weight: 550;
+}
+
+.not-account {
+  margin: 2.5rem 0 0.5rem 0;
+  display: inline;
+  color: rgb(37, 36, 36);
+  width: 17rem;
+}
+
+.link {
+  color: #0095f6;
+  font-weight: bold;
+}
+
+/* queries */
+
+@media (max-width: 1024px) {
+  .instagram-wrapper {
+    width: 90%;
+  }
+}
+
+@media (max-width: 650px) {
+  body {
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+    width: 50vw;
+    height: 50vh;
+  }
+
+  .instagram-wrapper {
+    width: 100%;
+    margin-left: 50vw;
+  }
+
+  .instagram-telefone {
+    display: none;
+  }
+
+  .instagram-continuar {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+  }
+
+  .grupo {
+    padding: 0;
+    border: none;
+  }
+}
